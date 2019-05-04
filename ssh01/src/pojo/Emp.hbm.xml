@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="pojo">
+	<class name="pojo.Emp" table="`EMP`">
+		<id name="empNo" column="`EMPNO`" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
+		<property name="empName" type="java.lang.String" column="`ENAME`" />
+		<property name="job" type="java.lang.String" column="`JOB`" />
+		<property name="salary" type="java.lang.Double" column="`SAL`" />
+		<property name="hireDate" type="java.util.Date" />
+	</class>
+</hibernate-mapping>
